@@ -29,9 +29,9 @@ console.log(prepend(10, prepend(20, null)));
 nth = (li, n) => {
     let elem; 
     let cnt = 0;
-    for(let i=li; i; i=i.rest, cnt++) {
-      if(cnt==n) {
-        elem=i.value;
+    for(let i = li; i; i = i.rest, cnt++) {
+      if(cnt == n) {
+        elem = i.value;
         break;
       }
     }
